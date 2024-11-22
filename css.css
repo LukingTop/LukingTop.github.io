@@ -1,0 +1,274 @@
+.btn-home,
+.btn-saiba {
+    display: inline-flex;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+	background-color: #0b4787;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    position: relative ;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    min-width: 100px;
+    max-width: 200px;
+    outline: 2px solid #f3f3f3;
+    outline-offset: 2px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn-home:hover,
+.btn-saiba:hover {
+    background-color: #0056b3; /* Tom mais claro para hover */
+    color: #ffffff; /* Texto permanece legível */
+}
+
+.dark-theme .btn-home,
+.dark-theme .btn-saiba {
+    background-color: #333333; /* Fundo para tema escuro */
+    color: #ffffff; /* Texto branco para contraste */
+}
+
+.dark-theme .btn-home:hover,
+.dark-theme .btn-saiba:hover {
+    background-color: #444444; /* Cor de hover no tema escuro */
+    color: #f1f1f1; /* Texto legível */
+}
+
+
+html {
+    scroll-behavior: smooth;
+    height: 100%; /* Para garantir o alinhamento correto */
+}
+
+.custom-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+:root {
+    --background-color: #ffffff; /* Cor do fundo para o modo claro */
+    --text-color: #000000;      /* Cor do texto para o modo claro */
+    --card-color: #f4f4f4;      /* Cor de fundo dos cards no modo claro */
+    --header-footer-bg: #f8f9fa6d;
+    --header-bg: #f8f9fa85;
+    --button-bg: #f4f4f4;
+    --button-text: #000000;
+  }
+  
+  .dark-theme {
+    --background-color: #121212; /* Cor do fundo para o modo escuro */
+    --text-color: #f1f1f1;       /* Cor do texto para o modo escuro */
+    --card-color: #1e1e1e;       /* Cor de fundo dos cards no modo escuro */
+    --header-footer-bg: #1f1f1f;
+    --header-bg: #1e1e1e;          /* Fundo do cabeçalho */
+    --button-bg: #292929;          /* Fundo dos botões */
+    --button-text: #ffffff;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    background-color: #ffffff; /* Fundo branco */
+    color: #343a40; /* Texto cinza-escuro */
+    margin: 0; /* Remove margens extras do corpo */
+    padding: 0;
+    height: 100%; /* Para garantir o alinhamento correto */
+    display: flex;
+    flex-direction: column;
+  }
+
+    footer .footer-section {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin: 0;
+    padding: 20px;
+    border: none; /* Remove qualquer borda */
+    box-shadow: none; /* Remove sombra no modo escuro */
+    width: 100%; /* Garante alinhamento */
+    justify-content: center; /* Centraliza conteúdo */
+    outline: none;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Espaça itens no footer */
+    align-items: center; /* Alinha verticalmente os elementos */
+    text-align: center; /* Centraliza o texto */
+    position: relative;
+    display: flex;
+    
+
+    }
+  
+  .card {
+    background-color: var(--card-color);
+    border: 1px solid var(--text-color);
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background-color: #121212;
+      --text-color: #ffffff;
+      --card-color: #1e1e1e;
+    }
+  }
+  
+  button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cartões ou seções */
+.section  {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    background-color: #f8f9fa; /* Fundo claro das seções */
+    color: #343a40; /* Texto escuro */
+}
+
+/* Botões */
+button:hover {
+    background-color: #444444; /* Leve destaque no hover no modo escuro */
+    color: #ffffff;
+}
+
+#footer dl.alt dt,
+#footer dl.alt dd,
+#footer ul.icons li a {
+    color: #343a40; /* Cinza-escuro para visibilidade no tema claro */
+    transition: color 0.3s ease;
+}
+
+.dark-theme #footer dl.alt dt,
+.dark-theme #footer dl.alt dd,
+.dark-theme #footer ul.icons li a {
+    color: #f8f9fa; /* Texto claro para o tema escuro */
+}
+
+.dark-theme body {
+    background-color: #121212; /* Fundo principal escuro */
+    color: #e4e4e4; /* Texto claro */
+
+
+}
+
+.dark-theme section {
+    background-color: #1e1e1e; /* Fundo das seções */
+    color: #e4e4e4; /* Texto claro */
+    border: 1px solid #333333; /* Bordas mais visíveis no tema escuro */
+}
+
+a {
+    color: #007bff; /* Azul no tema claro */
+}
+
+.dark-theme a {
+    color: #4da8da; /* Azul mais suave para o tema escuro */
+}
+
+
+.dark-theme button, 
+.dark-theme .btn-saiba, 
+.dark-theme .btn-home {
+    background-color: #4da8da; /* Azul suave no tema escuro */
+    color: #121212; /* Texto escuro */
+}
+
+/* Tema escuro - Rodapé */
+.dark-theme #footer {
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #e4e4e4; /* Texto claro */
+    border: none; /* Sem borda */
+    box-shadow: none; /* Sem sombra */
+}
+
+.dark-theme #footer ul.icons li a {
+    color: #4da8da; /* Azul suave para ícones */
+
+    
+}
+
+/* Tema escuro - Cabeçalho */
+.dark-theme #header {
+    background-color: #1e1e1e; /* Fundo escuro */
+    color: #e4e4e4;
+}
+
+/* Tema escuro - Menu */
+.dark-theme #nav {
+    background-color: #2a2a2a; /* Fundo escuro do menu */
+    color: #e4e4e4;
+}
+
+.dark-theme #nav a {
+    color: #4da8da; /* Links no menu */
+}
+
+.dark-theme #nav a.active {
+    background-color: #333333; /* Fundo ativo */
+    color: #ffffff; /* Texto ativo */
+}
+
+.dark-theme body {
+    background: linear-gradient(135deg, #1e1e1e, #121212);
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+main, .content-section, .section{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px;
+        flex-direction: column; /* Empilha elementos no footer */
+
+    }
+
+        .footer-section {
+            margin-bottom: 20px; /* Espaçamento entre seções */
+            width: 100%; /* Cada seção ocupa 100% */
+    }
+}
+
+
+header {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin: 0;
+    padding: 20px;
+    border: none; /* Remove qualquer borda */
+    background-color: var(--header-footer-bg);
+    box-shadow: none; /* Remove sombra no modo escuro */
+    width: 100%; /* Garante alinhamento */
+    justify-content: center; /* Centraliza conteúdo */
+    outline: none;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center; /* Alinha verticalmente os elementos */
+    text-align: center; /* Centraliza o texto */
+    
+
+    }
