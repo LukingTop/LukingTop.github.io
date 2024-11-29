@@ -1,6 +1,6 @@
 .btn-home,
 .btn-saiba {
-    display: auto, auto;
+    display: inline-flex;
     padding: 10px 20px;
     font-size: 16px;
     color: #ffffff;
