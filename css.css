@@ -28,18 +28,21 @@
 .btn-saiba:hover {
     background-color: #0056b3; /* Tom mais claro para hover */
     color: #ffffff; /* Texto permanece legível */
+	display: auto, auto;
 }
 
 .dark-theme .btn-home,
 .dark-theme .btn-saiba {
     background-color: #333333; /* Fundo para tema escuro */
     color: #ffffff; /* Texto branco para contraste */
+	display: auto, auto;
 }
 
 .dark-theme .btn-home:hover,
 .dark-theme .btn-saiba:hover {
     background-color: #444444; /* Cor de hover no tema escuro */
     color: #f1f1f1; /* Texto legível */
+	display: auto, auto;
 }
 
 
@@ -129,6 +132,7 @@ html {
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
+	display: auto, auto;
 }
 
 /* Cartões ou seções */
@@ -145,6 +149,7 @@ html {
 button:hover {
     background-color: #444444; /* Leve destaque no hover no modo escuro */
     color: #ffffff;
+	display: auto, auto;
 }
 
 #footer dl.alt dt,
